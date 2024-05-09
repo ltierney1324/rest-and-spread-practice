@@ -7,9 +7,10 @@ them.
 
 // Your code here
 const restSum = (...num) =>{
-  let sum =0;
-  sum +=num;
-  return sum;
+
+  let i=0;
+  const total = num.reduce((acc, curVal)=> acc+curVal, i);
+  return total;
 }
 
 console.log(restSum(3,5,6));                     // => 14
